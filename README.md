@@ -38,11 +38,9 @@ This project analyzes how market sentiment (Fear/Greed) influences trader behavi
 PrimeTrade/
 ├── data/                       # Raw datasets (Sentiment.csv, Trader_Data.csv)
 ├── images/                     # Saved charts from the Jupyter Notebook
-├── src/                        
-│   └── data_preparation.py     # Clean, modular feature engineering script
-├── output/                     # Generated intermediate files
+├── output/                     # Merged dataset (merged_trader_sentiment.csv)
 ├── notebooks/                  
-│   └── Trail.ipynb             # The core analytical engine (Phases 1 through 3)
+│   └── Final_Analysis.ipynb    # The core analytical engine (Phases 1 through 3)
 ├── WRITEUP.md                  # 1-page business memo with insights & strategy rules
 └── README.md                   # You are here
 ```
@@ -62,7 +60,7 @@ pip install pandas numpy scipy matplotlib seaborn scikit-learn shap jupyterlab
 ### 2. Running the Pipeline
 Open the primary Jupyter Notebook to execute the entire pipeline step-by-step:
 ```bash
-jupyter lab notebooks/Trail.ipynb
+jupyter lab notebooks/Final_Analysis.ipynb
 ```
 *Note: Ensure the `data/` directory contains both CSV files before running the notebook.*
 
