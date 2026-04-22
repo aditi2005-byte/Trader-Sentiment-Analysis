@@ -19,7 +19,7 @@ Most market analyses stop at simple correlation charts. This project adopts a ro
 
 ---
 
-## 📂** Repository Structure**
+## ** Repository Structure**
 ```text
 PrimeTrade/
 ├── data/                       # Raw datasets (Sentiment.csv, Trader_Data.csv)
