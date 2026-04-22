@@ -1,4 +1,4 @@
-# PrimeTrade Data Science Intern Project: Trader Performance vs Market Sentiment
+# PrimeTrade.ai Data Science Intern Project: Trader Performance vs Market Sentiment
 
 ## 1. Methodology
 To rigorously evaluate the relationship between market sentiment and trader behavior, this analysis moved beyond basic charting into statistical inference and predictive modeling. The workflow was structured as follows:
