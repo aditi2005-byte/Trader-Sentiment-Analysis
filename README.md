@@ -11,13 +11,27 @@
 <br/>
 
 ## **Project Overview**
-Most analyses stop at simple correlations, but here I tried to take a more structured approach to understand how market sentiment (Fear/Greed) affects trader behavior on Hyperliquid.
+This project analyzes how market sentiment (Fear/Greed) influences trader behavior on Hyperliquid using statistical and machine learning methods, rather than relying on simple correlations.
 
-Data preparation: Fixed timestamp mismatches (UTC epoch vs daily data), created lag-based momentum features, and identified shifts between sentiment regimes.
-Statistical testing: Used the Mann–Whitney U test to check whether returns during Fear differ significantly, and to examine the idea of a “Fear premium.”
-Modeling: Applied K-Means to group traders into behavior-based clusters, and used a Random Forest model with SHAP values to predict next-day profitability and interpret key drivers.
-Validation: Evaluated strategy robustness using Monte Carlo simulations (1,000 paths) to see how results hold under different scenarios.
----
+## Approach
+
+### Data Engineering
+- Resolved timestamp inconsistencies (UTC epoch vs daily data)
+- Created lag-based momentum features
+- Identified sentiment regime transitions
+
+### Statistical Analysis
+- Applied Mann–Whitney U test to compare return distributions
+- Evaluated evidence for a potential "Fear premium"
+
+### Machine Learning
+- Used K-Means clustering to identify trader archetypes
+- Trained a Random Forest model to predict next-day profitability
+- Used SHAP values for model interpretability
+
+### Validation
+- Performed Monte Carlo simulations (1,000 paths)
+- Tested robustness of derived strategies under different scenarios
 
 ## **Repository Structure**
 ```text
