@@ -10,7 +10,7 @@
 
 <br/>
 
-## 🎯 Project Overview
+## **Project Overview**
 Most market analyses stop at simple correlation charts. This project adopts a robust quantitative approach to evaluate how market sentiment (Fear/Greed) influences trader behavior on Hyperliquid:
 1. **Data Engineering**: Resolving UTC epoch vs Daily timestamp misalignments, extracting lagging momentum, and classifying sentiment regime transitions.
 2. **Statistical Rigor**: Utilizing Mann-Whitney U tests to prove the counter-intuitive "Fear Premium".
@@ -19,7 +19,7 @@ Most market analyses stop at simple correlation charts. This project adopts a ro
 
 ---
 
-## 📂 Repository Structure
+## 📂** Repository Structure**
 ```text
 PrimeTrade/
 ├── data/                       # Raw datasets (Sentiment.csv, Trader_Data.csv)
@@ -35,7 +35,7 @@ PrimeTrade/
 
 ---
 
-## 🚀 Setup & Execution
+## **Setup & Execution**
 
 ### 1. Environment Setup
 Create a virtual environment and install the required packages:
@@ -54,10 +54,13 @@ jupyter lab notebooks/Trail.ipynb
 
 ---
 
-## 🔮 What I'd Build With 2 More Weeks
-While this notebook serves as a strong quantitative foundation, here is how I would productionize this analysis if given more time:
+## **Future Scopes**
 
-1. **Survival Analysis via Cox Proportional Hazards:** I would move away from static "Days Survived" and model the true hazard rate of trader liquidations dynamically at the tick level, testing if entering a trade during Greed exponentially increases the risk of blow-up.
-2. **Hidden Markov Models (HMM) for Regime Detection:** Instead of relying on the external "Fear/Greed" index, I would build an HMM directly on the Hyperliquid order flow to identify latent market regimes organically.
-3. **Automated Trading Bot (Streamlit + API):** I would build a live Streamlit dashboard hooked into the Hyperliquid API that flags when Cluster 2 ("The Gamblers") begins accumulating 100% Long positions during Greed—serving as an early warning counter-indicator to go Short.
-4. **Advanced SHAP Dashboards:** Build an interactive Streamlit UI where portfolio managers can click on a specific trader Account ID and instantly see their personalized SHAP force-plot explaining their risk profile.
+1. Cox Survival Modeling:
+   Model liquidation risk dynamically instead of using “Days Survived,” and test whether entering trades during Greed increases blow-up probability.
+2. HMM for Regime Detection:
+   Build a Hidden Markov Model on order flow to identify market regimes directly, avoiding reliance on external Fear/Greed indices.
+3. Real-Time Trading Dashboard (Streamlit + API):
+   Develop a live dashboard that flags when high-risk trader clusters take extreme long positions during Greed—serving as a contrarian short signal.
+4. Interactive SHAP Dashboard:
+   Create a UI where users can select any trader and instantly see a SHAP-based explanation of their risk profile.
